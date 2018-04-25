@@ -1,4 +1,3 @@
-/Declarative//
 pipeline {
 	agent any
 	envirment {
@@ -7,8 +6,7 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				echo “Building”
-				sh “${”MAVEN_HOME}/bin/mvn clean package”
+				sh "${”MAVEN_HOME}/bin/mvn clean package"
 			}
 		}
 		stage ('Deploy_WebApp') {
