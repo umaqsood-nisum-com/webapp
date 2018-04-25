@@ -1,6 +1,6 @@
 pipeline {
 	agent any
-	envirment {
+	environment {
 		MAVEN_HOME = '/root/maven/appache-maven-3.5.3'
 	}
 	stages {
